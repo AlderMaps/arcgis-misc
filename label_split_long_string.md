@@ -4,6 +4,11 @@
 // AGOL seems to do this to an extent after about 4-5 words
 // but I wanted a shorter more square-ish label.
 
+// Note: A page I found today (not yesterday, unfortunately) outlines a really slick
+// way to do this by character count, not word count.
+// Would be handy for REALLY long labels where you want more uniformity:
+//https://community.esri.com/t5/arcgis-pro-questions/forcing-label-new-line-width/m-p/1166700/highlight/true#M54302
+
 // Take the string and split (on spaces) into an array
 var title_list = Split($feature.USER_listing_name, ' ')
 
