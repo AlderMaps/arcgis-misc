@@ -15,13 +15,13 @@ if (count == 0) {
   return '(No Market title available)'
 } 
 
-// If the array has only 1 or 2 words in it, leave it be
-else if ( 2 >= count >= 1) {
+// Else if the array has only 1 or 2 words in it, leave it be
+else if (count <= 2) {
   return $feature.USER_listing_name
 } 
 
-// If it's more than three, get to work
-else if (count >= 3) {
+// Else if it's three or more, get to work
+else {
 
   // make empty array to hold stuff that will be new label
   var label_array = []
