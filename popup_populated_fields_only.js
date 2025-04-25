@@ -24,10 +24,20 @@ Expects($feature, '*')
 
 var popup_arr = []
 
+var fields = Schema($feature).fields
+
 for (var f of $feature) {
     if (Includes(popup_fields, f.key)) {
         if (!IsEmpty(f.value)) {
-            Push(popup_arr, f.key + ': ' + f.value)
+
+            // Thanks to this post for help with this part:
+            // https://community.esri.com/t5/arcgis-online-questions/don-t-show-null-values-in-popup/m-p/1359714/highlight/true#M56367
+            var alias = f.key
+            for (var n in fields) {
+                if (fields[n].name == f.key) alias = fields[n].alias
+            }
+
+            Push(popup_arr, alias + ': <b>' + f.value + '</b>')
         }
     }
 }
