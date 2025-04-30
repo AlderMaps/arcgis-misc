@@ -53,7 +53,7 @@ for (var f of $feature) {
             }
 
             // Smush some HTML into my array followed by the alias
-			Push(table_arr, '<tr><td style="border: 1px solid #ccc; padding: 5px; width: 35%;">' + alias)
+	    Push(table_arr, '<tr><td style="border: 1px solid #ccc; padding: 5px; width: 35%;">' + alias)
 
             // Smush HTML, then the actual valie in the field
             Push(table_arr, '</td><td style="border: 1px solid #ccc; padding: 5px;">' + f.value)
