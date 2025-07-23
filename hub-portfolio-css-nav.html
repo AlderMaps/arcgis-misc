@@ -1,0 +1,169 @@
+<!--
+Work in progress!
+CSS block and HTML nav for my work-in-progress GIS portfolio site
+(ArcGIS Hub Site)
+
+Yes I know there's technically a separate block for CSS.
+I shove everything in the HTML block because some bits (:is()) don't play nice
+when pasted directly in the CSS block and I can't save them.
+When stuffed in a style block in the HTML space, they work. 🤷
+-->
+
+<style>
+
+  .alder :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: 800;
+    line-height: 1.3em;
+  }
+
+  .alder-light :is(h1, h2, h3, h4, h5, h6) {
+    color: #565;
+  }
+  
+  .alder-light p {
+    color: #333;
+  }
+  
+  .alder-dark :is(h1, h2, h3, h4, h5, h6) {
+    color: #898;
+  }
+  
+  .alder-dark p {
+    color: #ddd;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder-header-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #344;
+    margin: 0;
+    padding: 15px 50px;
+  }
+  
+  .alder-header-flex span {
+    padding: 0 10px;
+  }
+  
+  .alder-header-flex img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: inline;
+  }
+  
+  .alder-header-flex a {
+    color: #aba;
+    font-weight: 800;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+  }
+  
+  .alder-header-flex a:hover {
+    color: #cdc;
+    text-decoration: none;
+    border-bottom: 3px solid #cdc;
+  }
+  
+  .alder-header-flex a:visited {
+    color: #aba;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder-nav {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .alder-nav li {
+    margin: 0 15px;
+  }
+
+  /* ********** ********** ********** */
+
+  .alder-hero {
+    margin: 40px auto 50px auto;
+  }
+  
+  .alder-hero :is(h1, h2, h3, h4, h5, h6) {
+    margin: 0;
+    text-align: center;
+    line-height: 1.3em;
+    text-shadow: 0 0 5px #fff;
+  }
+  
+  .alder-hero h1 {
+    font-variant: small-caps;
+    font-size: 48px;
+    color: #787;
+    letter-spacing: 5px;
+    margin-left: 10px; /* this is just to correct small offset between h1 and h2 due to letter spacing */
+  }
+  
+  .alder-hero h4 {
+    color: #565;
+    letter-spacing: 1px;
+  }
+  
+  .alder-hero p {
+    margin-top: 15px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder-lead {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .alder-lead p {
+    color: #eee;
+    font-style: italic;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder-break {
+    border-bottom: 1px solid #aabbaa;
+    margin: 20px;
+  }
+  
+  .alder-placeholder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #ccc;
+  }
+  
+</style>
+
+<div class="alder-header-flex">
+  
+  <div>
+  <img src="https://raw.githubusercontent.com/AlderMaps/img-host/refs/heads/main/cone.png">
+  <a href="https://hub.aldermaps.com">Alder Maps</a>
+  </div>
+
+  <ul class="alder-nav">
+    <li><a href="#">Resume 🡵</a></li>
+    <li><a href="#">LinkedIn 🡵</a></li>
+    <li><a href="#">GitHub 🡵</a></li>
+    <li><a href="#">Contact 🡵</a></li>
+  </ul>
+
+</div>
+
