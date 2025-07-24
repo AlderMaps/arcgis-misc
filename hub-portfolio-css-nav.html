@@ -1,35 +1,56 @@
-<!--
-Work in progress!
-CSS block and HTML nav for my work-in-progress GIS portfolio site
-(ArcGIS Hub Site)
-
-Yes I know there's technically a separate block for CSS.
-I shove everything in the HTML block because some bits (:is()) don't play nice
-when pasted directly in the CSS block and I can't save them.
-When stuffed in a style block in the HTML space, they work. 🤷
--->
-
 <style>
 
-  .alder :is(h1, h2, h3, h4, h5, h6) {
+  .alder-screenshot img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .alder :is(h1, h2, h3, h4, h5) {
     font-weight: 800;
     line-height: 1.3em;
   }
+  
+  .alder h6 {
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  
+  .alder ul {
+    padding-left: 15px;
+    font-weight: 800;
+  }
 
-  .alder-light :is(h1, h2, h3, h4, h5, h6) {
+  .alder-light :is(h1, h2, h3, h4, h5) {
     color: #565;
   }
   
-  .alder-light p {
-    color: #333;
+  .alder-light h6 {
+    color: #999;
   }
   
-  .alder-dark :is(h1, h2, h3, h4, h5, h6) {
-    color: #898;
+  .alder-light ul {
+    color: #787;
+  }
+  
+  .alder-light p {
+    color: #555;
+  }
+  
+  .alder-dark :is(h1, h2, h3, h4, h5) {
+    color: #bcb;
+  }
+  
+  .alder-dark h6 {
+    color: #aaa;
+  }
+  
+  .alder-dark ul {
+    color: #aba;
   }
   
   .alder-dark p {
-    color: #ddd;
+    color: #ccc;
   }
   
   /* ********** ********** ********** */
@@ -40,7 +61,7 @@ When stuffed in a style block in the HTML space, they work. 🤷
     justify-content: space-between;
     background-color: #344;
     margin: 0;
-    padding: 15px 50px;
+    padding: 10px 50px;
   }
   
   .alder-header-flex span {
@@ -54,34 +75,39 @@ When stuffed in a style block in the HTML space, they work. 🤷
     display: inline;
   }
   
-  .alder-header-flex a {
+  /* ********** ********** ********** */
+
+  .alder-nav ul {
+    display: flex;
+  }
+
+  .alder-nav li {
+    margin: 0 15px;
+    list-style-type: none;
+  }
+  
+  .alder-nav a {
     color: #aba;
     font-weight: 800;
     font-variant: small-caps;
     letter-spacing: 2px;
+    text-decoration: none;
   }
   
-  .alder-header-flex a:hover {
-    color: #cdc;
+  .alder-nav a:link {
     text-decoration: none;
+  }
+  
+  .alder-nav a:hover {
+    color: #cdc;
     border-bottom: 3px solid #cdc;
   }
   
-  .alder-header-flex a:visited {
-    color: #aba;
+  .alder-nav a:active {
+    color: #fff;
+    border-bottom: 3px solid #fff;
   }
   
-  /* ********** ********** ********** */
-
-  .alder-nav {
-    display: flex;
-    list-style-type: none;
-  }
-  
-  .alder-nav li {
-    margin: 0 15px;
-  }
-
   /* ********** ********** ********** */
 
   .alder-hero {
@@ -153,17 +179,18 @@ When stuffed in a style block in the HTML space, they work. 🤷
 
 <div class="alder-header-flex">
   
-  <div>
+  <div class="alder-nav">
   <img src="https://raw.githubusercontent.com/AlderMaps/img-host/refs/heads/main/cone.png">
   <a href="https://hub.aldermaps.com">Alder Maps</a>
   </div>
 
-  <ul class="alder-nav">
-    <li><a href="#">Resume 🡵</a></li>
-    <li><a href="#">LinkedIn 🡵</a></li>
-    <li><a href="#">GitHub 🡵</a></li>
-    <li><a href="#">Contact 🡵</a></li>
-  </ul>
+  <div class="alder-nav">
+    <ul>
+      <li><a target="_blank" href="http://example.com">Résumé 🡵</a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/mwudtke">LinkedIn 🡵</a></li>
+      <li><a target="_blank" href="https://github.com/AlderMaps">GitHub 🡵</a></li>
+      <li><a target="_blank" href="mailto:misti@aldermaps.com?subject=Re: Alder Maps | Misti Wudtke's GIS Portfolio">Contact 🡵</a></li>
+    </ul>
+  </div>
 
 </div>
-
