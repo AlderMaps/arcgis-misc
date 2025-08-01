@@ -1,60 +1,5 @@
 <style>
 
-  .alder-screenshot img {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-  
-  .alder :is(h1, h2, h3, h4, h5) {
-    font-weight: 800;
-    line-height: 1.3em;
-  }
-  
-  .alder h6 {
-    font-style: italic;
-    margin-bottom: 5px;
-  }
-  
-  .alder ul {
-    padding-left: 15px;
-    font-weight: 800;
-  }
-
-  .alder-light :is(h1, h2, h3, h4, h5) {
-    color: #565;
-  }
-  
-  .alder-light h6 {
-    color: #999;
-  }
-  
-  .alder-light ul {
-    color: #787;
-  }
-  
-  .alder-light p {
-    color: #555;
-  }
-  
-  .alder-dark :is(h1, h2, h3, h4, h5) {
-    color: #bcb;
-  }
-  
-  .alder-dark h6 {
-    color: #aaa;
-  }
-  
-  .alder-dark ul {
-    color: #aba;
-  }
-  
-  .alder-dark p {
-    color: #ccc;
-  }
-  
-  /* ********** ********** ********** */
-
   .alder-header-flex {
     display: flex;
     align-items: baseline;
@@ -112,13 +57,13 @@
 
   .alder-hero {
     margin: 40px auto 50px auto;
+    text-shadow: 0 0 5px #fff;
   }
   
   .alder-hero :is(h1, h2, h3, h4, h5, h6) {
     margin: 0;
     text-align: center;
     line-height: 1.3em;
-    text-shadow: 0 0 5px #fff;
   }
   
   .alder-hero h1 {
@@ -144,14 +89,112 @@
   /* ********** ********** ********** */
 
   .alder-lead {
-    width: 80%;
+    margin-top: 5px;
     text-align: center;
-    margin: 0 auto;
   }
-  
+
   .alder-lead p {
     color: #eee;
     font-style: italic;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder :is(h1, h2, h3, h4) {
+    font-weight: 800;
+    line-height: 1.3em;
+  }
+  
+  .alder h6 {
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  
+  .alder ul {
+    padding-left: 15px;
+    font-weight: 800;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder-light :is(h1, h2, h3, h4) {
+    color: #565;
+  }
+  
+  .alder-light h6 {
+    color: #999;
+  }
+  
+  .alder-light ul {
+    color: #787;
+  }
+  
+  .alder-light p {
+    color: #555;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder-dark :is(h1, h2, h3, h4) {
+    color: #bcb;
+  }
+  
+  .alder-dark h6 {
+    color: #aaa;
+  }
+  
+  .alder-dark ul {
+    color: #aba;
+  }
+  
+  .alder-dark p {
+    color: #ccc;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder-award {
+    line-height: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .alder-award span {
+    font-size: 2em;
+  }
+  
+  /* ********** ********** ********** */
+
+  .alder-screenshot {
+    background-color: #aba;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .alder-screenshot a:focus {
+    outline: none;
+  }
+
+  .alder-screenshot img {
+    width: 100%;
+    object-fit: contain;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform .2s;
+  }
+  
+  .alder-screenshot img:hover {
+    transform: scale(1.05);
+  }
+  
+  .alder-screenshot-noround img {
+    width: 100%;
+    object-fit: contain;
+    transition: transform .2s;
+  }
+  
+  .alder-screenshot-noround img:hover {
+    transform: scale(1.05);
   }
   
   /* ********** ********** ********** */
@@ -161,6 +204,8 @@
     margin: 20px;
   }
   
+  /* ********** ********** ********** */
+
   .alder-placeholder {
     position: absolute;
     top: 0;
@@ -175,6 +220,8 @@
     color: #ccc;
   }
   
+  /* ********** ********** ********** */
+
 </style>
 
 <div class="alder-header-flex">
@@ -186,7 +233,6 @@
 
   <div class="alder-nav">
     <ul>
-      <li><a target="_blank" href="http://example.com">Résumé 🡵</a></li>
       <li><a target="_blank" href="https://www.linkedin.com/in/mwudtke">LinkedIn 🡵</a></li>
       <li><a target="_blank" href="https://github.com/AlderMaps">GitHub 🡵</a></li>
       <li><a target="_blank" href="mailto:misti@aldermaps.com?subject=Re: Alder Maps | Misti Wudtke's GIS Portfolio">Contact 🡵</a></li>
