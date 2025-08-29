@@ -13,23 +13,20 @@
     </h4>
 
     <p style="line-height: 1.5em;">
-        This dashboard allows users to view the geographic extent of FEMA Disaster Declaration from 2013 to the present. Disaster Declaration are usually county-based and encompass one or more counties, but may also be state-wide or defined by tribal areas.<br><br>
+        <strong>This dashboard allows users to view the geographic extent of FEMA US Disaster Declaration from 2013 to the present.</strong> It also provides details, such as incident type and beginning and end dates, for all Declarations. The Declaration data is updated daily.<br><br> 
         
-        All Tribal areas and US Territories (e.g. Puerto Rico, Guam etc.) are included in the data and map.<br><br>
+        Declaration are usually county-based and encompass one or more counties, but may also be state-wide or defined by tribal areas. <strong> Tribal areas and US Territories (e.g. Puerto Rico, Guam etc.) are included in the map and data.</strong><br><br>
 
-        In this map, Disaster Declarations are (mostly) aggregated into a single shape per Disaster Declaration string (e.g. "FM-5608-WY"). (Each shape may comprise non-contiguous components, but it is still a single data record). An exception are counties and tribal areas that share a Declaration string; these are retained as separate records and can be viewed independently by toggling the "Entities" filter in the header.
+        In this map, <strong>Disaster Declarations are</strong> (mostly) <strong>aggregated into a single geometry per Disaster Declaration string (e.g. "FM-5608-WY").</strong> Each shape may comprise non-contiguous components, but it is still a single data record. An exception are counties and tribal areas that share a Declaration string; these are retained as separate records and can be viewed independently by toggling the "Entities" filter in the header.
     </p>
 
-    <a href="https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview" style="display: block; margin: 30px 0; padding: 10px 20px; background-color: #c83200; color:#fcfcf2; border: 1px solid #a3ccc5; border-radius: 100px; width: fit-content;">
-        Data Currency and Sources
-    </a>
-
     <h4 style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
-        Year vs Fiscal Year
+        Fiscal Year vs Calendar Year
     </h4>
 
     <p style="line-height: 1.5em;">
-        The years of the Disaster Declarations referenced in this Dashboard (e.g. in the left-side filter, right-side list) are fiscal years, not calendar years. Federal fiscal years begin October 1st of the prior year, e.g. fiscal year 2025 spans October 1st 2024 to September 30, 2025.<br><br>
+        The "Year" attribute of the Disaster Declarations referenced in this Dashboard (e.g. in the left-side filter, right-side list) are <strong>fiscal years, not calendar years</strong>. Federal fiscal years begin October 1st of the prior year, e.g. fiscal year 2025 spans October 1st 2024 to September 30, 2025.<br><br>
+
         I have retained fiscal years associated with Declarations rather than converting them to calendar years to maintain consistency with FEMA's original Disaster Declaration data, to facilitate cross-referencing records should users wish to do so.
     </p>
 
@@ -38,20 +35,9 @@
     </h4>
 
     <p style="line-height: 1.5em;">
-        To improve Dashboard performance and user experience, the shapes of counties, states, tribal areas and territories have been simplified. This includes the removal of small area components, which may be most readily noticed in Tribal areas. However, all counties, Tribal entities and US territories (per US Census Bureau unique identifiers) have been retained in the final dataset.
+        To improve dashboard performance and user experience, the shapes of counties, states, tribal areas and territories have been simplified. This includes the removal of small area components, which may be most readily noticed in Tribal areas.<br><br>
+
+        However, all counties, Tribal entities and US territories (per US Census Bureau unique identifiers) have been retained in the geometry reference dataset.
     </p>
-
-    <div style="border-bottom: 2px solid #a3ccc5; margin-top: 30px; margin-bottom: 30px;">
-        &nbsp;
-    </div>
-
-    <p style="line-height: 1.5em; color: #a1b9b5; font-style: italic;">
-        This dashboard was created using Esri ArcGIS Dashboards.<br>
-        Want to build your own dashboards?
-    </p>
-
-    <a href="https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview" style="display: block; margin: 30px 0; padding: 10px 20px; background-color: #c83200; color:#fcfcf2; border: 1px solid #a3ccc5; border-radius: 100px; width: fit-content;">
-        Discover Dashboards
-    </a>
 
 </div>
