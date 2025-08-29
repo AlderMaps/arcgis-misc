@@ -8,36 +8,56 @@
 
 <div style="padding: 0 50px 100px 50px;">
 
-    <h4 style="color: #408075; font-weight: bold; margin-top: 30px; margin-bottom: 10px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
+    <h4 style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
         About the Declarations
     </h4>
 
     <p style="line-height: 1.5em;">
-        This dashboard allows users to view the geographic extent of FEMA Disaster Declaration from 2013 to the present. Disaster Declaration are usually county-based and encompass one or more counties, but may also be state-wide or defined by tribal areas. In this map, Disaster Declarations are aggregated into a single shape per Disaster Declaration string (e.g. "FM-5608-WY").<br><br>
+        This dashboard allows users to view the geographic extent of FEMA Disaster Declaration from 2013 to the present. Disaster Declaration are usually county-based and encompass one or more counties, but may also be state-wide or defined by tribal areas.<br><br>
+        
+        US Territories (e.g. Puerto Rico, Guam etc.) are included in the data and map.<br><br>
 
-        This dashboard also provides a summary of the details of a given Disaster Declaration, available in the "Details" tab in the lower right. These details are derived directly from FEMA's Disaster Declarations Summaries (see the "Data Currency & Sources" tab). To view details for a given Declaration, select a shape in the map or select a row from the list above the "Details" tab.
+        In this map, Disaster Declarations are (mostly) aggregated into a single shape per Disaster Declaration string (e.g. "FM-5608-WY"). An exception are counties and tribal areas that share a Declaration string; these are retained as separate shapes and can be viewed independently by toggling the "Entities" filter in the header.
     </p>
 
-    <h4 style="color: #408075; font-weight: bold; margin-top: 30px; margin-bottom: 10px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
+    <h4 style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
+        View Declaration Details
+    </h4>
+
+    <p style="line-height: 1.5em; margin-bottom: 10px;">
+        To view the details (e.g. start date, end date) of a given Disaster Declaration:
+    </p>
+
+    <p style="line-height: 1.5em; margin-left: 50px; text-indent: -19px;">
+        <span style="color:#a3ccc5; margin-right: 10px;">&#x25cf</span>Use the filters in the left sidebar and/or zoom the map to narrow the number of Declarations displayed in the map.
+    </p>
+    <p style="line-height: 1.5em; margin-left: 50px; text-indent: -19px;">
+        <span style="color:#a3ccc5; margin-right: 10px;">&#x25cf</span>Select a single shape in the map, OR select a declaration from the list in the upper right.
+    </p>
+    <p style="line-height: 1.5em; margin-left: 50px; text-indent: -19px;">
+        <span style="color:#a3ccc5; margin-right: 10px;">&#x25cf</span>Select the "Details" tab (below the pie chart, lower right) and scroll to view the full Declaration details.
+    </p>
+
+    <h4 style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
         Year vs Fiscal Year
     </h4>
 
     <p style="line-height: 1.5em;">
-        This dashboard was created using Esri ArcGIS Dashboards.<br>
-        Want to build your own dashboards?
+        The years of the Disaster Declarations referenced in this Dashboard (e.g. in the left-side filter, right-side list) are fiscal years, not calendar years. Federal fiscal years begin October 1st of the prior year, e.g. fiscal year 2025 spans October 1st 2024 to September 30, 2025.<br><br>
+        I have retained fiscal years associated with Declarations rather than converting them to calendar years to maintain consistency with FEMA's original Disaster Declaration data, to facilitate cross-referencing datasets should users wish to do so.
     </p>
 
-    <h4 style="color: #408075; font-weight: bold; margin-top: 30px; margin-bottom: 10px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
+    <h4 style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
         Reset the Dashboard
     </h4>
 
-    <p>
+    <p style="line-height: 1.5em;">
         To remove ALL filters and reset the dashboard (i.e. zoom out and show all counties), select the circular arrow in the lower right:
     </p>
-    
+
     <img width="45px" height="45px" src="https://raw.githubusercontent.com/AlderMaps/img-host/refs/heads/main/reset_button.png" style="margin-top: 15px;">
 
-    <div style="border-bottom: 2px solid #a3ccc5; margin-bottom: 30px;">
+    <div style="border-bottom: 2px solid #a3ccc5; margin-top: 30px; margin-bottom: 30px;">
         &nbsp;
     </div>
 
@@ -46,7 +66,7 @@
         Want to build your own dashboards?
     </p>
 
-    <a href="https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview" style="display: block; margin: 20px 0; padding: 10px 15px; background-color: #c83200; color:#fcfcf2; border: 1px solid #a3ccc5; border-radius: 100px; width: fit-content;">
+    <a href="https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview" style="display: block; margin: 20px 0; padding: 10px 20px; background-color: #c83200; color:#fcfcf2; border: 1px solid #a3ccc5; border-radius: 100px; width: fit-content;">
         Discover Dashboards
     </a>
 
