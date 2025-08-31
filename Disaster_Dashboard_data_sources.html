@@ -1,4 +1,5 @@
-<div style="background-color: #c83200; border-bottom: 5px solid #a3ccc5; color: #fcfcf2; padding: 20px 50px 10px 50px; margin: -6px -6px 20px -6px;">
+<div
+    style="background-color: #c83200; border-bottom: 5px solid #a3ccc5; color: #fcfcf2; padding: 20px 50px 10px 50px; margin: -6px -6px 20px -6px;">
 
     <h2>
         Data Currency & Sources
@@ -8,30 +9,55 @@
 
 <div style="padding: 0 50px 100px 50px;">
 
-    <h4 style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
-        Data Currency
-    </h4>
-
-    <p style="line-height: 1.5em;">
-        <strong>This dashboard is updated once daily</strong> through an automated process that connects directly to FEMA's Disaster Declarations Summaries. Therefore, allow up to 24 hours for new Disaster Declarations to be reflected in this dashboard.<br><br>
-        <span style="font-style: italic; color: #408075;">GIS Developers: This dashboard is updated using an ArcGIS Jupyter Notebook in ArcGIS Online. A Scheduled Task runs the notebook on a daily schedule, with a webhook configured to send an email on script completion or with any errors.</span>
-    </p>
-
-    <a target="_blank" href="https://github.com/AlderMaps/arcgis-api-python/blob/main/Disaster_Declarations_Dashboard.ipynb" style="display: block; margin: 20px 0; padding: 10px 20px; background-color: #c83200; color:#fcfcf2; border: 1px solid #a3ccc5; border-radius: 100px; width: fit-content;">
-        View the Dashboard update script
-    </a>
-
-    <h4 style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
+    <h4
+        style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
         Data Sources
     </h4>
 
     <p style="line-height: 1.5em;">
-        <strong>The data in this dashboard are derived & refreshed from FEMA's Disaster Declaration Summaries.</strong> These data are <a target="_blank" href="https://www.fema.gov/about/openfema/faq#:~:text=How%20frequently%20is%20disaster%20data,=name%20eq%20%2527DisasterDeclarationsSummaries%2527" style="font-weight: bold;">refreshed every 20 minutes</a> and are available to download by anyone. Links to the data in various formats, and more information, can be found at the FEMA's Disaster Declarations Summaries page (below).<br><br>
-        Note that, while most data fields and attributes are retained by this dashboard, the geospatial data is (mostly) aggregated to the level of the FEMA Declaration String field (often spanning multiple counties/tribal areas), whereas the tabular Disaster Declaration data themselves are (usually) county-level.
+        <strong>The data in this dashboard are derived & refreshed from FEMA's Disaster Declaration Summaries.</strong>
+        These data are <a target="_blank"
+            href="https://www.fema.gov/about/openfema/faq#:~:text=How%20frequently%20is%20disaster%20data,=name%20eq%20%2527DisasterDeclarationsSummaries%2527"
+            style="font-weight: bold;">refreshed every 20 minutes</a> and are available to download by anyone. Links to
+        the data in various formats, and more information, can be found at the FEMA's Disaster Declarations Summaries
+        page (below).<br><br>
+        Note that, while most data fields and attributes are retained by this dashboard, the geospatial data is (mostly)
+        aggregated to the level of the FEMA Declaration String field (often spanning multiple counties/tribal areas),
+        whereas the tabular Disaster Declaration data themselves are (usually) county-level.
     </p>
 
-    <a target="_blank" href="https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2" style="display: block; margin: 20px 0; padding: 10px 20px; background-color: #c83200; color:#fcfcf2; border: 1px solid #a3ccc5; border-radius: 100px; width: fit-content;">
+    <a target="_blank" href="https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2"
+        style="display: block; margin: 20px 0; padding: 10px 20px; background-color: #c83200; color:#fcfcf2; border: 1px solid #a3ccc5; border-radius: 100px; width: fit-content;">
         FEMA Disaster Declaration Summaries
     </a>
+
+    <h4
+        style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
+        Data Currency (Under Construction)
+    </h4>
+
+    <p style="line-height: 1.5em;">
+        <strong>The data update portion of this dashboard is under construction!</strong><br><br>
+        The Disaster Declarations data in the map is currently static; the data was most recently updated mid-August 2025. The implementation of automated data updates is expected sometime in September 2025, at which time the data update cadence and process will be as follows:
+    </p>
+
+    <div style="margin-top: 25px; padding: 20px; border: 1px solid #b5c4c2; border-radius: 15px; background-color: #e3e3d8;">
+
+        <p style="line-height: 1.5em; color: #839391">
+            <strong>This dashboard is updated once daily</strong> through an automated process that connects directly to
+            FEMA's Disaster Declarations Summaries. Therefore, allow up to 24 hours for new Disaster Declarations to be
+            reflected in this dashboard.<br><br>
+            <span style="font-style: italic; color: #a0b5b3;">GIS Developers: This dashboard is updated using an ArcGIS
+                Jupyter Notebook in ArcGIS Online. A Scheduled Task runs the notebook on a daily schedule, with a
+                webhook configured to send an email on script completion or with any errors.</span>
+        </p>
+
+        <a target="_blank"
+            href="https://github.com/AlderMaps/arcgis-api-python/blob/main/Disaster_Declarations_Dashboard.ipynb"
+            style="display: block; margin: 20px 0; padding: 10px 20px; background-color: #a0b5b3; color:#e3e3d8; border: 1px solid #b5c4c2; border-radius: 100px; width: fit-content;">
+            View the Dashboard update script
+        </a>
+
+    </div>
 
 </div>
