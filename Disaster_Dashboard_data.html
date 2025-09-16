@@ -33,31 +33,22 @@
 
     <h4
         style="color: #408075; font-weight: bold; margin-top: 50px; margin-bottom: 15px; padding-left: 10px; border-left: solid 12px #a3ccc5; border-radius: 100px;">
-        Data Currency (Under Construction)
+        Data Currency
     </h4>
 
     <p style="line-height: 1.5em;">
-        <strong>The data update portion of this dashboard is under construction!</strong><br><br>
-        The Disaster Declarations data in the map is currently static; the data was most recently updated mid-August 2025. The implementation of automated data updates is expected sometime in September 2025, at which time the data update cadence and process will be as follows:
+        <strong>This dashboard is updated once daily</strong> through an automated process that connects directly to
+        FEMA's Disaster Declarations Summaries. Therefore, allow up to 24 hours for new Disaster Declarations to be
+        reflected in this dashboard.<br><br>
+        <span style="font-style: italic; color: #408075;">GIS Developers: This dashboard is updated using an ArcGIS
+            Jupyter Notebook in ArcGIS Online. A Scheduled Task runs the notebook on a daily schedule, with a
+            webhook configured to send an email on script completion detailing whether new features were added.</span>
     </p>
 
-    <div style="margin-top: 25px; padding: 20px; border: 1px solid #b5c4c2; border-radius: 15px; background-color: #e3e3d8;">
-
-        <p style="line-height: 1.5em; color: #839391">
-            <strong>This dashboard is updated once daily</strong> through an automated process that connects directly to
-            FEMA's Disaster Declarations Summaries. Therefore, allow up to 24 hours for new Disaster Declarations to be
-            reflected in this dashboard.<br><br>
-            <span style="font-style: italic; color: #a0b5b3;">GIS Developers: This dashboard is updated using an ArcGIS
-                Jupyter Notebook in ArcGIS Online. A Scheduled Task runs the notebook on a daily schedule, with a
-                webhook configured to send an email on script completion or with any errors.</span>
-        </p>
-
-        <a target="_blank"
-            href="https://github.com/AlderMaps/arcgis-api-python/blob/main/Disaster_Declarations_Dashboard_v2.ipynb"
-            style="display: block; margin: 20px 0; padding: 10px 20px; background-color: #a0b5b3; color:#e3e3d8; border: 1px solid #b5c4c2; border-radius: 100px; width: fit-content;">
-            View the Dashboard update script
-        </a>
-
-    </div>
+    <a target="_blank"
+        href="https://github.com/AlderMaps/arcgis-api-python/blob/main/Disaster_Declarations_Dashboard_v2.ipynb"
+        style="display: block; margin: 20px 0; padding: 10px 20px; background-color: #c83200; color:#fcfcf2; border: 1px solid #a3ccc5; border-radius: 100px; width: fit-content;">
+        View the Dashboard update script
+    </a>
 
 </div>
